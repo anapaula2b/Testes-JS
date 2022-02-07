@@ -1,5 +1,33 @@
-body{
-    background-color: rgb(44, 40, 40);
-    color: white;
-    font: normal 20pt monospace;
+body {
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#blocos {
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    border-radius: 15%;
+    border:5px solid white;
+    text-align: center;
+    display: inline-block;
+}
+a:link {
+    color: rgb(241, 70, 241);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(133, 198, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+
 }

@@ -4,62 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            background-color: rgb(43, 43, 43);
-            color: whitesmoke;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        div#blocos{
-            background-color: gray;
-            height: 200px;
-            width: 200px;
-            line-height: 200px;
-            border-radius: 15%;
-            border:5px solid white;
-            text-align: center;
-            display: inline-block;
-        }
-        a:link{
-            color: rgb(241, 70, 241);
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:visited{
-            color: rgb(133, 198, 255);
-            background-color: transparent;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+
     <title>Book Planner Digital</title>
     
 </head>
 <body>
     <header class="cabecalho">
-        <button class="cabecalho-botao"><a href="resenhas.html">Resenhas</a></button>
-        <button class="cabecalho-botao"><a href="livros.html">Livros</a></button>
+        <img class="cabecalho-img" src="imagens/livro.png" alt="Icone Livro">
+        <a class="cabecalho-item" href="resenhas.html">Resenhas</a>
+        <a class="cabecalho-item" href="livros.html">Livros</a>
     </header>
-    <h1><strong>My Book Planner Digital</strong> </h1>
-    <p>Este é meu book plenner no formato digital!! </p>
+
+    <main>
+        <h1><strong>My Book Planner Digital</strong> </h1>
+        <p>Este é meu book plenner no formato digital!! </p>
+
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    </main>
+   
     
-        <div id="blocos" onmouseenter="clicar()" onmouseout="sair()">
-            <p>livros</p>
-        </div>
-        
-        
     
-    <script>
-        function clicar(){
-            var resenha = document.getElementsByClassName("cabesalio-botao")
-            resenha.style.background-color; '5px solid #ff4aa4'
-            resenha.style.color = '#ff4aa4'
-        }
-        function sair(){
-            var msair = document.getElementsByClassName("cabesalio-botao")
-            msair.style.background-color; '5px solid white'
-            msair.style.color = 'white'
-        }
-    </script>
-    
+  
 </body>
 </html>
